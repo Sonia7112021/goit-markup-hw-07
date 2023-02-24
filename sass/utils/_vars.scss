@@ -1,0 +1,21 @@
+:root {
+  --text-main-color: #212121;
+  --text-white: #ffffff;
+  --text-blue: #2196f3;
+  --text-grey: #757575;
+  --first-section-bg: #2f303a;
+  --fourth-section-bg: #f5f4fa;
+  --footer-link: #ffffff99;
+  --five-logo: #afb1b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--text-main-color);
+  line-height: 1.5;
+  font-family: "Roboto", "sans-serif";
+  background-color: #f9f9fd;
+}
