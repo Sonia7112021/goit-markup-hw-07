@@ -71,7 +71,7 @@ body {
   color: inherit;
   margin-right: 94px;
 }
-.main-nav__links {
+.logo {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -143,12 +143,12 @@ body {
   list-style: none;
 }
 
-.container--header {
+.flex-nav-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.header-border {
+.site-nav {
   border-bottom: 1px solid #ececec;
   padding: 32px 0px;
 }
@@ -156,7 +156,7 @@ body {
   display: flex;
   align-items: center;
 }
-.main-nav {
+.nav-links {
   display: flex;
   list-style: none;
   padding: 0%;

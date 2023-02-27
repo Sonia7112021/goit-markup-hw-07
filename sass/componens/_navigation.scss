@@ -1,16 +1,24 @@
-.nav.header-border {
+.site-nav {
   border-bottom: 1px solid #ececec;
   padding: 32px 0px;
 
-  &__container--header {
+  &__flex-nav-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
   &__loggo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 94px;
   }
 
-  &__main-nav {
+  &__nav-links {
     display: flex;
     list-style: none;
     padding: 0%;
@@ -28,16 +36,45 @@
     list-style: none;
     display: block;
   }
+  &__email {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    /* identical to box height, or 162% */
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-style: normal;
+    margin-left: auto;
+    display: flex;
+  }
+
   &__hover:hover {
     color: var(--text-blue);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__drif {
+    position: relative;
   }
-}
-.header-secon {
-  &__filter-buttons {
+  &__drif::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    background: var(--text-blue);
+    width: 100%;
+    left: 0px;
+    border-radius: 2px;
+    height: 4px;
   }
-  &__hover {
+  &__text {
+    color: var(--text-blue);
+  }
+  &__nav-links a:hover svg {
+    fill: var(--text-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__nav-links a svg {
+    margin-right: 10px;
   }
 }

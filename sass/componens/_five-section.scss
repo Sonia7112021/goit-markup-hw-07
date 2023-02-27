@@ -1,0 +1,45 @@
+.section {
+  padding: 94px 0;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__other-sections-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+
+  &__firmy {
+    background: var(--text-white);
+    margin: 0 auto;
+  }
+
+  &__firmy ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    fill: var(--five-logo);
+  }
+
+  &__firmy ul li {
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    list-style: none;
+  }
+  &__firmy ul li:hover {
+    border-color: var(--text-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__firmy ul li a:hover {
+    fill: var(--text-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

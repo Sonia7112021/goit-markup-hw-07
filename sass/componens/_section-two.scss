@@ -1,0 +1,44 @@
+.section {
+  padding: 94px 0;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__section-two-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    column-gap: 30px;
+  }
+
+  &__diagram {
+    background-color: var(--fourth-section-bg);
+    border-radius: 4px;
+    padding: 21px 100px;
+    margin-bottom: 30px;
+  }
+
+  &__diagram ul li {
+    margin-left: 30px;
+  }
+
+  &__section-two-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__section-two-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-grey);
+  }
+}
