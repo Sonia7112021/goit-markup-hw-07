@@ -1,0 +1,135 @@
+.from {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &__label {
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__input {
+    background: #ffffff;
+    font-family: inherit;
+    line-height: 1.15;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px 20px 10px 40px;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  &__input:focus,
+  &__input:focus ~ svg,
+  &__input-.kolum:focus ~ svg {
+    outline: 1px solid #2196f3;
+    fill: var(--text-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__kolum svg:focus {
+    outline: 1px solid #2196f3;
+    fill: var(--text-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-main-color);
+  }
+
+  &__botom {
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    color: var(--text-white);
+    padding: 10px 70px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  &__svg {
+    position: absolute;
+    margin-top: 36px;
+    margin-left: 15px;
+    margin-right: 40px;
+    left: 20px;
+    z-index: 100;
+  }
+  &__label .terms-label {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  &__terms-label input {
+    margin-top: 20px;
+  }
+  &__kolum {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__terms-label {
+    position: relative;
+  }
+
+  &__test {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__checkbox {
+    margin-top: 20px;
+    cursor: pointer;
+
+    display: flex;
+  }
+
+  &__checkbox input {
+    visibility: hidden;
+  }
+
+  &__checkbox input + span {
+    margin-top: 3px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-basis: 15px;
+    border: 1px solid black;
+
+    margin-right: 10px;
+    border-radius: 4px;
+    /* background-color: var(--text-blue); */
+    width: 16px;
+  }
+
+  &__checkbox input:checked + span {
+    background-image: url("../images/check.svg");
+    background-color: var(--text-blue);
+    background-repeat: no-repeat;
+    background-size: 12px 11px;
+    background-position: center;
+    border: 1px solid var(--text-blue);
+  }
+  &__reg:hover {
+    color: var(--text-blue);
+    text-decoration: underline;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__reg {
+    color: var(--text-blue);
+  }
+}
