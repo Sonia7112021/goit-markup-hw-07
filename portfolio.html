@@ -20,350 +20,376 @@
 
     <title>zadanie domowe nr 7</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header__section container">
-        <nav class="flex-wrapper">
-          <a href="index.html" class="logo logo--header">
-            <h3><span class="logo--color">Web</span>Studio</h3></a
-          >
-          <ul class="header__nav">
+  <body class="font-family">
+    <header class="site-nav">
+      <div class="container flex-nav-container">
+        <a class="loggo" href="index.html"
+          ><span class="text">Web</span>Studio</a
+        >
+
+        <nav>
+          <ul class="nav-links header-secondary-section">
             <li>
-              <a
-                href="index.html"
-                class="header__links header__item header__blueline"
-                >Agencja</a
-              >
+              <a class="hover logo" href="index.html">Agencja</a>
             </li>
             <li>
-              <a
-                href="portfolio.html"
-                class="header__links header__item header__blueline"
-                >Portfolio</a
-              >
+              <a class="hover logo drif" href="portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a
-                href="#kontakt"
-                class="header__links header__item header__blueline"
-                >Kontakt</a
-              >
+              <a class="hover logo" href="index.html">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <div class="flex-wrapper">
-          <div class="header__contact">
-            <svg width="16" height="12" class="header__contact-icon">
-              <use href="images/main/icons.svg#icon-envelope"></use>
-            </svg>
-            <a
-              href="mail:info@devstudio.com"
-              class="header__contact-link header__contact-gap"
-              >info@devstudio.com</a
+        <ul class="header-secon nav-links">
+          <li>
+            <a class="filter-buttons hover" href="mailto:info@devstudio.com">
+              <svg width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
-          </div>
-          <div class="header__contact">
-            <svg
-              width="10"
-              height="16"
-              class="header__contact-icon header__contact-icon-position"
-            >
-              <use href="images/main/icons.svg#icon-smartphone"></use>
-            </svg>
-            <a href="tel:+48111111111" class="header__contact-link"
-              >+48 111 111 111</a
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <ul class="filter">
-        <li>
-          <button type="button" class="filter__button">Wszystkie</button>
-        </li>
-        <li>
-          <button type="button" class="filter__button">Strony</button>
-        </li>
-        <li>
-          <button type="button" class="filter__button">Aplikacje</button>
-        </li>
-        <li>
-          <button type="button" class="filter__button">Dizajn</button>
-        </li>
-        <li>
-          <button type="button" class="filter__button">Marketing</button>
-        </li>
-      </ul>
-      <section class=".card">
-        <ul class="card__set">
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/1technologia.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Technocrack jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Technocrack</p>
-              <p class="card__field">Strona internetowa</p>
-            </div>
           </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/portoflio/2grafika.jpg"
-                  alt="Grafika przedstawia dwóch koszykarzy."
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Grafika New Orlean vs Golden Star jest popularną platformą
-                    wykorzystywaną do rozpowszechniania koronawirusa. Firmy
-                    wykorzystują tę platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Grafika New Orlean vs Golden Star</p>
-              <p class="card__field">Dizajn</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/3restauracja.jpg"
-                  alt="Logo restauracji Seafood"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Restauracja Seafood jest popularną platformą wykorzystywaną
-                    do rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Restauracja Seafood</p>
-              <p class="card__field">Aplikacja</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/4projektprime.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Marketing jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Projekt Prime</p>
-              <p class="card__field">Marketing</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/5projektbox.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Projekt Boxes jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Projekt Boxes</p>
-              <p class="card__field">Aplikacja</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/6inspiration.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Inspiration has no Borders jest popularną platformą
-                    wykorzystywaną do rozpowszechniania koronawirusa. Firmy
-                    wykorzystują tę platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Inspiration has no Borders</p>
-              <p class="card__field">Strona internetowa</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/7magazyn.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Magazyn Limited Edition jest popularną platformą
-                    wykorzystywaną do rozpowszechniania koronawirusa. Firmy
-                    wykorzystują tę platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Magazyn Limited Edition</p>
-              <p class="card__field">Dizajn</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/8projektlab.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Projekt LAB jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Projekt LAB</p>
-              <p class="card__field">Marketing</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div>
-              <div class="card__image">
-                <img
-                  src="images/main/portoflio/9growing.jpg"
-                  alt="Laptop z wyswietlona strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <div class="card__overlay">
-                  <p>
-                    Growing Business jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </div>
-              <p class="card__title">Growing Business</p>
-              <p class="card__field">Aplikacja</p>
-            </div>
+          <li>
+            <a class="filter-buttons hover" href="tel:+48111111111">
+              <svg width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="mitte">
+            <li>
+              <button type="button" class="cursor hover-portfoli ctea-button">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button type="button" class="cursor hover-portfoli ctea-button">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button type="button" class="cursor hover-portfoli ctea-button">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button type="button" class="cursor hover-portfoli ctea-button">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button type="button" class="cursor hover-portfoli ctea-button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+
+          <ul class="mitte">
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img.jpg"
+                    width="
+                  370"
+                    height="
+                  294"
+                    alt="Technocrack"
+                  />
+
+                  <div class="overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Technocrack</h5>
+                  <p class="header-secondary">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(1).jpg"
+                    width="370"
+                    height="294"
+                    alt="Grafika New Orlean vs Golden Star"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Grafika New Orlean vs Golden Star jest popularną platformą
+                      wykorzystywaną do rozpowszechniania koronawirusa. Firmy
+                      wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Grafika New Orlean vs Golden Star</h5>
+                  <p class="header-secondary">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(2).jpg"
+                    width="370"
+                    height="294"
+                    alt="Restauracja Seafood"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Restauracja Seafood jest popularną platformą
+                      wykorzystywaną do rozpowszechniania koronawirusa. Firmy
+                      wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Restauracja Seafood</h5>
+                  <p class="header-secondary">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(3).jpg"
+                    width="370"
+                    height="294"
+                    alt="Projekt Prime"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Marketing jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Projekt Prime</h5>
+                  <p class="header-secondary">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(4).jpg"
+                    width="370"
+                    height="294"
+                    alt="Projekt Boxes"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Projekt Boxes jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Projekt Boxes</h5>
+                  <p class="header-secondary">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(5).jpg"
+                    width="370"
+                    height="294"
+                    alt="Inspiration has no Borders"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Inspiration has no Borders jest popularną platformą
+                      wykorzystywaną do rozpowszechniania koronawirusa. Firmy
+                      wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Inspiration has no Borders</h5>
+                  <p class="header-secondary">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(6).jpg"
+                    width="370"
+                    height="294"
+                    alt="Magazyn Limited Edition"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Magazyn Limited Edition jest popularną platformą
+                      wykorzystywaną do rozpowszechniania koronawirusa. Firmy
+                      wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Magazyn Limited Edition</h5>
+                  <p class="header-secondary">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(7).jpg"
+                    width="370"
+                    height="294"
+                    alt="Projekt LAB"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Projekt LAB jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Projekt LAB</h5>
+                  <p class="header-secondary">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="box">
+                  <img
+                    src="images/img(8).jpg"
+                    width="370"
+                    height="294"
+                    alt="Growing Business"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Growing Business jest popularną platformą wykorzystywaną
+                      do rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="hit">
+                  <h5 class="photo-one">Growing Business</h5>
+                  <p class="header-secondary">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer flex-wrapper">
-      <div class="flex-wrapper">
-        <div class="flex-column">
-          <a href="#" class="logo logo--footer"
-            ><h3><span class="logo--color">Web</span>Studio</h3>
-          </a>
-          <address class="footer__address">
-            m. Warszawa, Aleje Jerozolimskie 21
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div>
+          <a class="title loggo footer-logo" href="index.html"
+            ><span class="text">Web</span>Studio</a
+          >
+          <address>
+            <ul class="address-list">
+              <li class="ulice">m.Warszawa, Aleje Jerozolimskie 21</li>
+              <li>
+                <a class="contact-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
           </address>
-
-          <a href="mail:info@devstudio.com" class="footer__contact-link"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+48111111111" class="footer__contact-link"
-            >+48 111 111 111</a
-          >
         </div>
-        <div class="footer__joinus-box">
-          <h3 class="footer__joinus-heading">Dołącz do nas</h3>
-          <ul class="social-icon">
+        <div class="footer-socials">
+          <h3>Dołącz do nas</h3>
+
+          <ul>
             <li>
-              <a href="#" class="social-icon__space footer__social-icon">
-                <svg class="social-icon__svg" width="20" height="20">
-                  <use href="./images/main/icons.svg#icon-instagram-2"></use>
+              <a href="#"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon__space footer__social-icon">
-                <svg class="social-icon__svg" width="20" height="20">
-                  <use href="./images/main/icons.svg#icon-twitter-1"></use>
+              <a href="#"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon__space footer__social-icon">
-                <svg class="social-icon__svg" width="20" height="20">
-                  <use href="./images/main/icons.svg#icon-facebook"></use>
+              <a href="#"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon__space footer__social-icon">
-                <svg class="social-icon__svg" width="20" height="20">
+              <a href="#">
+                <svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin2"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="newsletter">
-          <h3 class="footer__joinus-heading">Zapisz się do newslettera</h3>
-          <form name="newsletter-form" class="newsletter__form">
-            <label
-              ><input
+        <div class="newsle-secion">
+          <form>
+            <label> Zapisz się do newslettera</label>
+            <div class="nawsle-input">
+              <input
                 type="email"
-                name="newsletter-email"
-                class="newsletter__input"
+                name="E-mail"
+                class="inpute"
                 placeholder="E-mail"
-            /></label>
-            <button type="submit" class="newsletter__btn">
-              <span>Zapisz się</span>
-              <svg width="24" height="24">
-                <use href="./images/symbol-defs(2).svg#icon-icon-send"></use>
-              </svg>
-            </button>
+              />
+              <button type="submit" class="newsl">
+                <a>Zapisz się</a>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs(2).svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
