@@ -719,19 +719,25 @@
             />
 
             <div class="terms">
-              <label class="checkbox">
+              <label for="checkbox" class="terms__label">
                 <input
                   type="checkbox"
-                  name="form-agreement"
-                  value="form-agreement"
+                  id="checkbox"
+                  name="terms-checkbox"
+                  class="checkbox"
                 />
-                <span class="checkbox__icon"></span>
-                Oświadczam iż akceptuję&nbsp;<span class="reg">Regulamin</span
-                >&nbsp;i&nbsp;
-                <span class="reg"> Politykę Prywatności.</span>
-              </label>
+                <svg width="16" height="15" class="checkbox__icon">
+                  <use href="../images/Ve.svg"></use>
+                </svg>
 
-              <button class="from-botom" type="submit">Wyślij</button>
+                Oświadczam iż akceptuję
+                <a href="#" class="terms__link">Regulamin</a> i
+                <a href="#" class="terms__link">Politykę Prywatności.</a></label
+              >
+            </div>
+
+            <div class="terms__submit-button-pos">
+              <button type="submit" class="terms__submit-button">Wyślij</button>
             </div>
           </div>
         </form>
