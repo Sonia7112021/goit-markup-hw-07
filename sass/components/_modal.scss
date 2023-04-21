@@ -152,7 +152,7 @@
     }
   }
 
-  .checkbox {
+  .checkboc {
     appearance: none;
     border: 1px $fontColor solid;
     height: 15px;
@@ -163,6 +163,7 @@
     margin-top: 20px;
     cursor: pointer;
     display: flex;
+    background-image: url("../images/Ve.svg");
   }
 
   &__icon {
@@ -207,4 +208,25 @@
 .test {
   text-align: center;
   margin: 0;
+}
+.chec {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    display: none;
+    width: 13px;
+    height: 13px;
+    background-color: blueviolet;
+  }
+}
+
+.checkbox {
+  margin: 0;
+}
+
+.checkbox:checked + .chec__icon {
+  display: block;
 }
