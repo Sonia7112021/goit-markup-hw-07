@@ -117,16 +117,16 @@
   }
 
   .terms {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(230, 121, 121);
 
     &__label {
       font-size: 14px;
       line-height: 1.5;
       text-align: left;
       color: $nrColor;
-      justify-content: center;
     }
 
     &__link {
@@ -194,30 +194,27 @@
   }
 }
 
+.test {
+  text-align: center;
+  margin: 0;
+}
 .chec {
   position: relative;
-
-  &__icon {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    display: none;
-    width: 13px;
-    height: 13px;
-    background-color: $hoverColor;
-  }
 }
-
+&__icon {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  display: none;
+  width: 13px;
+  height: 13px;
+  background-color: blueviolet;
+}
 .checkbox {
   margin: 0;
-  padding: 6px;
-
-  gap: 10px;
+  padding: 0px 40px;
 }
 
 .checkbox:checked + .chec__icon {
   display: block;
-}
-.linee {
-  display: flex;
 }
