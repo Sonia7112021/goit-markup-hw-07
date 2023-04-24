@@ -117,16 +117,16 @@
   }
 
   .terms {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
 
     &__label {
       font-size: 14px;
       line-height: 1.5;
       text-align: left;
       color: $nrColor;
+      justify-content: center;
     }
 
     &__link {
@@ -193,22 +193,7 @@
     border-radius: 4px;
   }
 }
-&_:checked:checked + .checkbox__icon {
-  opacity: 1;
-}
-&_input:checked + span {
-  background-image: url("../images/check.svg");
-  background-color: var(--text-blue);
-  background-repeat: no-repeat;
-  background-size: 12px 11px;
-  background-position: center;
-  border: 1px solid var(--text-blue);
-}
 
-.test {
-  text-align: center;
-  margin: 0;
-}
 .chec {
   position: relative;
 
@@ -219,14 +204,20 @@
     display: none;
     width: 13px;
     height: 13px;
-    background-color: blueviolet;
+    background-color: $hoverColor;
   }
 }
 
 .checkbox {
   margin: 0;
+  padding: 6px;
+
+  gap: 10px;
 }
 
 .checkbox:checked + .chec__icon {
   display: block;
+}
+.linee {
+  display: flex;
 }
